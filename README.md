@@ -1,6 +1,6 @@
 # Data Analyst Portfolio
 
-<img width="1920" height="919" alt="portfolio preview" src="https://github.com/user-attachments/assets/3c6723e8-0a50-4948-bbfc-7c7993ce965f" />
+
 
 ## About This Project
 
