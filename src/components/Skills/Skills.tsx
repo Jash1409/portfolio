@@ -2,12 +2,12 @@ import CssIcon from "../../assets/skills/css.svg?react";
 import GitIcon from "../../assets/skills/git.svg?react";
 import HtmlIcon from "../../assets/skills/html.svg?react";
 import JavaScriptIcon from "../../assets/skills/javascript.svg?react";
-import JestIcon from "../../assets/skills/jest.svg?react";
-import NextJsIcon from "../../assets/skills/nextjs.svg?react";
 import ReactIcon from "../../assets/skills/react.svg?react";
-import ReduxIcon from "../../assets/skills/redux.svg?react";
 import TailwindCssIcon from "../../assets/skills/tailwindcss.svg?react";
-import TypeScriptIcon from "../../assets/skills/typescript.svg?react";
+import NodeJsIcon from "../../assets/skills/nodedotjs.svg?react";
+import FireBaseIcon from "../../assets/skills/firebase (1).svg?react";
+import SqlIcon from "../../assets/skills/mysql.svg?react";
+import FastApiIcon from "../../assets/skills/fastapi.svg?react";
 import SkillCard from "./SkillCard";
 
 export default function Skills() {
@@ -21,35 +21,35 @@ export default function Skills() {
         <span className="font-extrabold">Skills</span>
       </h2>
       <ul className="grid grid-cols-2 justify-items-center gap-5 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-12 xl:grid-cols-5">
-        <SkillCard title="HTML5">
-          <HtmlIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="SQL">
+          <SqlIcon className="h-12 w-12 group-hover:fill-primary-white" />
         </SkillCard>
-        <SkillCard title="CSS3">
-          <CssIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="Power BI">
+          <TailwindCssIcon className="h-12 w-12 group-hover:fill-primary-white group-hover:stroke-primary-white" />
         </SkillCard>
-        <SkillCard title="JavaScript">
-          <JavaScriptIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="Excel">
+          <HtmlIcon className="h-12 w-12 group-hover:fill-primary-white" />
         </SkillCard>
-        <SkillCard title="TypeScript">
-          <TypeScriptIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="Python">
+          <JavaScriptIcon className="h-12 w-12 group-hover:fill-primary-white" />
+        </SkillCard>
+        <SkillCard title="Pandas">
+          <ReactIcon className="h-12 w-12 group-hover:fill-primary-white" />
+        </SkillCard>
+        <SkillCard title="NumPy">
+          <FastApiIcon className="h-12 w-12 group-hover:fill-primary-white" />
+        </SkillCard>
+        <SkillCard title="Matplotlib">
+          <FireBaseIcon className="h-12 w-12 group-hover:fill-primary-white" />
         </SkillCard>
         <SkillCard title="React">
-          <ReactIcon className="group-hover:fill-primary-white" />
+          <NodeJsIcon className="h-12 w-12 group-hover:fill-primary-white" />
         </SkillCard>
-        <SkillCard title="Redux">
-          <ReduxIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="JavaScript">
+          <CssIcon className="h-12 w-12  group-hover:fill-primary-white" />
         </SkillCard>
-        <SkillCard title="Next JS">
-          <NextJsIcon className="group-hover:fill-primary-white" />
-        </SkillCard>
-        <SkillCard title="Tailwind">
-          <TailwindCssIcon className="group-hover:fill-primary-white group-hover:stroke-primary-white" />
-        </SkillCard>
-        <SkillCard title="Jest">
-          <JestIcon className="group-hover:fill-primary-white" />
-        </SkillCard>
-        <SkillCard title="GIT">
-          <GitIcon className="group-hover:fill-primary-white" />
+        <SkillCard title="Git">
+          <GitIcon className="h-12 w-12 group-hover:fill-primary-white" />
         </SkillCard>
       </ul>
     </section>

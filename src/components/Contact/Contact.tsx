@@ -22,17 +22,17 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, type: "spring" }}
             >
-              Let`s
+              Open to
               <span className="text-stroke-1 text-stroke-primary-black text-primary-white px-3">
-                talk
+                data
               </span>
-              for
-              <br /> Something special
+              analytics
+              <br /> opportunities
             </motion.h2>
             <p className="text-base/[150%] text-zinc-500">
-              I`m currently looking for new opportunities, my inbox always open.
-              Whether you have a question or just want to say hi, I`ll try my
-              best to get back to you!
+              I’m currently looking for data analytics opportunities, and my inbox is always open.
+              Whether you have a question, a collaboration idea, or a role to discuss,
+              I’d be happy to connect.
             </p>
             <p className="flex items-center transition-all duration-300 hover:pl-3">
               <EmailIcon className="mr-3 h-5 w-5" />
@@ -41,7 +41,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                liubynets.nataliia@gmail.com
+                jashsanghvi42@gmail.com
               </a>
             </p>
           </div>

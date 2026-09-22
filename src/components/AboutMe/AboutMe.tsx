@@ -1,4 +1,5 @@
-import girl from "../../assets/girl.svg";
+
+import boy from "../../assets/boy.png";
 import { useCursorHover } from "../../hooks/useCursorHover";
 import { motion } from "motion/react";
 
@@ -9,8 +10,9 @@ export default function AboutMe() {
       className="bg-primary-black flex flex-col gap-10 px-4 py-5 sm:p-6 md:p-20 lg:flex-row lg:px-28"
       id="about"
     >
-      <div className="flex-center lg:w-1/2">
-        <img src={girl} alt="girl illustration" />
+      <div className="lg:w-1/2 flex flex-col justify-center max-h-[520px] lg:max-h-[600px]">
+        <img src={boy} alt="boy illustration"
+         className="max-h-[520px] w-auto object-contain" />
       </div>
       <div className="lg:w-1/2">
         <h3 className="text-primary-white mb-10 text-[28px]/[114%] tracking-tight lg:text-5xl/[117%]">
@@ -28,46 +30,21 @@ export default function AboutMe() {
             transition={{ duration: 1, type: "spring" }}
             viewport={{ once: true }}
           >
-            I am a highly motivated and detail-oriented Entry-Level Front-End
-            Developer with a strong passion for building modern and responsive
-            web applications. My foundation is built on core technologies like
-            HTML, CSS, JavaScript (ES6+), and React. Through a series of
-            hands-on projects, I have developed a solid understanding of
-            component-based architecture, seamless API integration, and creating
-            user-friendly interfaces. My eagerness to contribute to a
-            collaborative team and grow within a dynamic development environment
-            drives me to consistently expand my skill set.
-          </motion.p>
+          I’m an aspiring data analyst who enjoys working with data to uncover patterns, answer real business questions, and turn raw information into meaningful insights. I work with SQL, Excel, Python, Pandas, and Power BI to clean datasets, explore trends, and create clear, useful visuals.          </motion.p>
           <motion.p
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 2, type: "spring" }}
             viewport={{ once: true }}
           >
-            My technical expertise is complemented by practical experience with
-            tools and libraries essential for modern development. I am
-            proficient in state management with Redux Toolkit, testing with Jest
-            and React Testing Library, and version control using Git and GitHub.
-            I am also familiar with full-stack technologies such as Node.js and
-            MongoDB, which allows me to understand both the front-end and
-            back-end aspects of a project. My formal training, including courses
-            from Academind and the EPAM UpSkill Program, has provided me with a
-            comprehensive understanding of industry best practices.
-          </motion.p>
+          I’m comfortable working with messy data, validating assumptions, and finding the story behind the numbers. I like breaking down problems step by step, building dashboards, and presenting findings in a way that supports better decisions.          </motion.p>
           <motion.p
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 3, type: "spring" }}
             viewport={{ once: true }}
           >
-            Beyond my technical skills, I am a committed problem-solver with a
-            strong analytical mindset, honed during my academic studies. I have
-            applied this disciplined approach to my projects, such as QuickQuiz
-            AI, a responsive application that leverages Gemini AI, and the
-            Ukrify Chrome Extension, which enhances productivity for bilingual
-            users. These projects demonstrate my ability to translate complex
-            ideas into functional, clean, and intuitive digital products.
-          </motion.p>
+          I enjoy learning by exploring datasets, improving my analysis process, and applying analytical thinking to practical problems. I’m looking for opportunities where I can contribute to data-driven decisions and keep growing as an analyst.          </motion.p>
         </article>
       </div>
     </section>

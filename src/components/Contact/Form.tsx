@@ -23,7 +23,7 @@ export default function Form() {
     const formData = new FormData(formElement);
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
-    console.log(message);
+    
     if (
       !message.trim().length ||
       !email.trim().length ||
@@ -39,22 +39,33 @@ export default function Form() {
       return;
     }
 
+    // Check if environment variables are loaded
+    if (!import.meta.env.VITE_EMAILJS_SERVICE_ID || 
+        !import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 
+        !import.meta.env.VITE_EMAILJS_PUBLIC_KEY) {
+      console.error("EmailJS environment variables are not configured");
+      setIsSent("error");
+      setClicked(false);
+      return;
+    }
+
     if (formElement) {
       emailjs
         .sendForm(
-          import.meta.env.VITE_SERVICE_ID,
-          import.meta.env.VITE_TEMPLATE_ID,
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           formElement,
           {
-            publicKey: import.meta.env.VITE_PUBLIC_KEY
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
           }
         )
         .then(() => {
           setIsSent("success");
+          formElement.reset();
         })
         .catch((error) => {
           setIsSent("error");
-          console.log("FAILED...", error.text);
+          console.error("EmailJS Error:", error);
         })
         .finally(() => setClicked(false));
     }

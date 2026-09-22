@@ -1,8 +1,8 @@
 import SocialMedia from "./SocialMedia";
-import girl from "../../assets/girlWithLaptop.svg";
+
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
-
+import boy from "../../assets/boywithlaptop.png";
 export default function Hero() {
   return (
     <div className="flex-center bg-primary-white flex-col-reverse justify-evenly px-4 sm:px-6 md:flex-row md:px-20 md:pt-10 lg:px-28">
@@ -17,7 +17,7 @@ export default function Hero() {
           <h1>
             <span>Hello, I`am</span>{" "}
             <TypeAnimation
-              sequence={["Junior", 3000, "", 1000, "Nataliia", 1000]}
+              sequence={["", 3000, "", 1000, "Jash", 1000]}
               wrapper="span"
               speed={50}
               style={{ fontWeight: 800, display: "inline-block" }}
@@ -26,22 +26,18 @@ export default function Hero() {
             />
           </h1>
           <p>
-            <span className="font-extrabold">Frontend </span>
+            <span className="font-extrabold">Aspiring </span>
             <span className="text-primary-white text-stroke-1 text-stroke-primary-black font-extrabold">
-              Developer
+              Data Analyst
             </span>
           </p>
           <p>
             <span>Based In </span>
-            <span className="font-extrabold">Poland.</span>
+            <span className="font-extrabold">Mumbai.</span>
           </p>
         </div>
         <p className="text-base/6 font-normal text-zinc-500">
-          I am a passionate and highly motivated technology enthusiast with a
-          strong focus on building innovative solutions and continuously
-          expanding my skills. My goal is to grow as a developer and contribute
-          to meaningful projects within the dynamic and ever-evolving tech
-          industry, applying my skills to solve real-world problems.
+          I enjoy turning raw data into clear insights, building dashboards, and using analysis to solve real-world problems. I’m focused on strengthening my toolkit in SQL, Excel, Python, and Power BI while turning numbers into actionable stories.
         </p>
         <div className="lg:mt-10">
           <SocialMedia />
@@ -56,8 +52,8 @@ export default function Hero() {
         viewport={{ once: true }}
       >
         <img
-          src={girl}
-          alt="girl with laptop"
+          src={boy}
+          alt="boy with laptop"
           fetchPriority="high"
           className="max-h-[750px] pb-8 sm:w-[539px] xl:w-630"
         />

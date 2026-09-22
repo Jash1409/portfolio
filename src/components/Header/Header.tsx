@@ -33,7 +33,7 @@ export default function Header() {
         </button>
       ) : (
         <>
-          <Logo color="black" />
+          <Logo />
           <BurgerMenu onclick={() => setIsMenuOpen(true)} />
         </>
       )}

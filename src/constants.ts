@@ -12,70 +12,65 @@ export const linksInfo = [
 export const projectsData: ProjectType[] = [
   {
     imgSrc: "src/assets/ukrify.png",
-    imgAlt: "Ukrify extension banner",
+    imgAlt: "Ola Ride Analytics Dashboard preview",
     number: 1,
-    title: "Ukrify - Chrome Extension",
+    title: "Ola Ride Analytics Dashboard",
     description:
-      "This project a lightweight Chrome extension that instantly converts text typed in the wrong keyboard layout (English → Ukrainian) without needing to delete or retype. It eliminates the need to delete and retype text by allowing users to simply highlight the text and click to convert it. The extension is designed to be simple, fast, and hassle-free, with features that let you either copy the corrected text to the clipboard or replace it in place.",
-    demo: "https://chromewebstore.google.com/detail/ukrify/fbfgapejodfnnmfijbhkgjakcmbfbcpo",
+      "This project focuses on cleaning and analyzing ride data to uncover demand patterns, trip trends, and service efficiency across different time periods and locations. Using Power BI and Excel, I turned raw operational data into a dashboard that highlights key insights such as peak demand, cancellations, and driver utilization.",
+    demo: "https://ola-data-analytics-dashboard.vercel.app/",
     github: "https://github.com/IntToLong/UKRIFY",
     technologies: [
-      "Vanilla JavaScript",
-      "DOM",
-      "Chrome Extension API",
-      "Clipboard API"
+      "Python (Pandas)",
+      "Power BI"
     ],
     ariaLabel: {
-      demo: "View QuickQuiz live demo",
-      github: "View QuickQuiz project source code on GitHub"
+      demo: "View Ola Ride Analytics Dashboard live demo",
+      github: "View Ola Ride Analytics Dashboard project source code on GitHub"
     }
   },
   {
     imgSrc: "src/assets/quickquiz1.png",
-    imgAlt: "QuickQuiz website screenshot",
+    imgAlt: "Google Ads Campaign Simulator preview",
     number: 2,
-    title: "QuickQuiz - AI-generated quizzes",
+    title: "Google Ads Campaign Simulator",
     description:
-      "This project is a quiz application that uses Google's Gemini AI to create personalized quizzes based on topic, difficulty, and question count. It provides a seamless learning experience through an intuitive user interface, offering real-time feedback. The app features AI-generated quizzes with adjustable complexity, clear distinctions between correct and incorrect answers, and a responsive design with strong test coverage.",
-    demo: "https://quick-quiz-delta.vercel.app/",
+      "This project models campaign performance around CTR, CPC, conversion rate, and ROI to evaluate how different marketing choices affect total results. I focused on metrics analysis, forecasting, and communicating what drives performance so the business can make faster, more confident decisions.",
+    demo: "https://google-campaign-simulator.vercel.app/",
     github: "https://github.com/IntToLong/QuickQuiz",
     technologies: [
-      "Next.js",
-      "Google Gemini API",
-      "CSS Modules",
-      "Redux",
-      "Jest"
+      "React.js",
+      "Python"
     ],
     ariaLabel: {
-      demo: "View QuickQuiz live demo",
-      github: "View QuickQuiz project source code on GitHub"
+      demo: "View Google Ads Campaign Simulator live demo",
+      github: "View Google Ads Campaign Simulator project source code on GitHub"
     }
   },
   {
     imgSrc: "src/assets/resumeLight.png",
-    imgAlt: "Resume website screenshot",
+    imgAlt: "Work From Cafe preview",
     number: 3,
-    title: "Resume - interactive online resume",
+    title: "Work From Cafe",
     description:
-      "This project is a personal interactive online resume with a modern, responsive design and a dynamic canvas background. It is a visually engaging and functional portfolio that provides quick access to my LinkedIn and GitHub profiles. The resume includes features like a dark mode toggle for comfortable viewing, is optimized for printing, and allows users to download a PDF version for offline use.",
+      "This project takes a lightweight analytical approach to understanding how café environments influence productivity, comfort, and work routines. It is a smaller, practical example of data collection and trend observation, focused on extracting useful insights from everyday behavior.",
     demo: "https://inttolong.github.io/Resume/",
     github: "https://github.com/IntToLong/Resume",
-    technologies: ["HTML5", "Tailwind CSS", "TypeScript", "Vite"],
+    technologies: ["React.js", "Node.js", "Supabase", "Google Maps API", "Ookla Speedtest API"],
     ariaLabel: {
-      demo: "View Resume live demo",
-      github: "View Resume project source code on GitHub"
+      demo: "View Work From Cafe live demo",
+      github: "View Work From Cafe project source code on GitHub"
     }
   },
   {
     imgSrc: "src/assets/portfolio.png",
-    imgAlt: "Portfolio website screenshot",
+    imgAlt: "Portfolio data storytelling preview",
     number: 4,
-    title: "Portfolio - recursion",
+    title: "Portfolio - Data Storytelling",
     description:
-      "This project is an online portfolio that serves as a professional hub for showcasing my work. It features a dedicated projects block, which provides detailed descriptions of my various projects and professional accomplishments. This site, a project in itself, embodies the principle of recursion by acting as both a platform for my work and a tangible example of my web development capabilities.",
+      "This portfolio is a data-driven story about my analytical skills, project work, and decision-making process. It presents my work as a narrative of problem solving, dashboard creation, and insight generation, helping visitors quickly understand how I approach data and business questions.",
     demo: "https://inttolong.github.io/portfolio/",
     github: "https://github.com/IntToLong/portfolio",
-    technologies: ["React", "Tailwind CSS", "TypeScript", "Vite"],
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     ariaLabel: {
       demo: "View Portfolio live demo",
       github: "View Portfolio project source code on GitHub"

@@ -15,13 +15,13 @@ export default function FormActions({ clicked }: { clicked: boolean }) {
         {clicked ? "Sending..." : "Get In Touch"}
       </button>
       <div className="flex gap-3 md:justify-evenly md:gap-5">
-        <SocialCard path="https://www.linkedin.com/in/nataliia-luibynets/">
+        <SocialCard path="https://www.linkedin.com/in/jashksanghvi/">
           <LinkedinIcon className="group-hover:fill-primary-white h-5 w-5" />
         </SocialCard>
         <SocialCard path="https://inttolong.github.io/Resume/">
           <FacebookIcon className="group-hover:fill-primary-white h-5 w-5" />
         </SocialCard>
-        <SocialCard path="https://github.com/IntToLong/">
+        <SocialCard path="https://github.com/Jash1409/">
           <GitHubIcon className="group-hover:fill-primary-white h-5 w-5" />
         </SocialCard>
         <SocialCard path="https://discord.com/users/831960537923453008">
